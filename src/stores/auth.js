@@ -1,8 +1,9 @@
 import { defineStore } from "pinia";
+import { useStorage } from '@vueuse/core'
 
 export const useAuthStore = defineStore("auth", {
   state: () => ({
-    isAuthenticated: false,
+    isAuthenticated: useStorage("isAuthenticated", false),
   }),
 
   getters: {},

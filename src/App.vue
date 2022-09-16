@@ -1,10 +1,10 @@
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import GlobalStyles from "./GlobalStyles";
 import { ThemeProvider } from "vue3-styled-components";
 
 export default {
   components: {
-    HelloWorld,
+    GlobalStyles,
     ThemeProvider,
   },
 };
@@ -12,6 +12,6 @@ export default {
 
 <template>
   <ThemeProvider>
-    <HelloWorld />
+    <RouterView />
   </ThemeProvider>
 </template>
